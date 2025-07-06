@@ -84,7 +84,7 @@ position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70vw; /* or max-width: 400px; for smaller screens */
+  width: 50vw; /* or max-width: 400px; for smaller screens */
   height: auto;
   display: flex;
   justify-content: center;
@@ -119,6 +119,7 @@ width: 50%;
   top: 70%;
   left: 50%;                   /* center horizontally */
   transform: translateX(-50%);
+  width:80vw;
   opacity: 1;
   margin-top: 130px;
 }
@@ -130,12 +131,12 @@ width: 50%;
   display: inline-block;
  background: #fffbe8;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  max-width: 100%;
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: 'Yeshi';
   opacity: 0;
 transition: opacity 0.5s ease;
+
 }
 
 .fade-in {
@@ -148,10 +149,10 @@ transition: opacity 0.5s ease;
 
 #crack-button {
   position: fixed;
-bottom: 50px;
+bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 20px 30px;
+  padding: 16px 20px;
   font-size: 2rem;
   cursor: pointer;
   color: #fffbe8;
