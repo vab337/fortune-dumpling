@@ -137,8 +137,8 @@ transition: opacity 0.5s ease;
   color: #fffbe8;
   background: transparent;
   border: 6px solid #fffbe8;
-    outline: 3px solid #fffbe8;         /* outer border */
-  outline-offset: 6px;                /* space between borders */
+    /* outline: 3px solid #fffbe8;      
+  outline-offset: 6px;                */
   border-radius: 100px;
   box-shadow: none;
   transition: color 0.3s;
