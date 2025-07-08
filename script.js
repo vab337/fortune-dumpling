@@ -5,8 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('dumpling-container');
   const strip = document.getElementById('paper-strip');
   const fortuneText = document.getElementById('fortune-text');
-  const button = document.getElementById('crack-button');
-
   // Title floats up on load
   setTimeout(() => {
     title.classList.add('moved');
@@ -18,10 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }, 2200);
 
   // Button click triggers split + fortune
-  button.addEventListener('click', () => {
+  setTimeout(() => {
     container.classList.add('split');
 
-    // Delay reveal of paper and fortune
     setTimeout(() => {
       fortuneText.classList.add('fade-in');
 
@@ -32,9 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
           fortuneText.textContent = random;
           console.log(fortuneText.textContent);
         });
-
-      // Optional: hide the button
-      button.style.display = 'none';
-    }, 1000); // 1s to allow dumpling split animation
-  });
+    }, 1000); // Wait 1s after split for fortune reveal
+  }, 3000); // Crack the dumpling after a brief pause
 });

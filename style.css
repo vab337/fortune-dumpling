@@ -60,50 +60,53 @@ position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50vw; /* or max-width: 400px; for smaller screens */
+  width: 80vw; /* or max-width: 400px; for smaller screens */
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+
 }
 
 .dumpling-half {
-width: 50%;
-  height: auto;
-  transition: all 1.5s ease;
 
+height: auto;
+transition: all 1.5s ease;
+z-index: 10;
+/* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
 }
 
 #dumpling-left {
-  transform: translateX(2%);
+  width: 51%;
+  transform: translateX(18.5%);
 }
 
 #dumpling-right {
+  width: 49%;
   transform: translateX(0);
 }
 
 .split #dumpling-left {
-  transform: translateX(-80%) rotate(-10deg);
+  transform: translateX(-90%) rotate(-10deg);
 }
 
 .split #dumpling-right {
-  transform: translateX(80%) rotate(10deg);
+  transform: translateX(90%) rotate(10deg);
 }
 
 #paper-strip {
   position: absolute;
-  left: 50%;                   /* center horizontally */
-  transform: translateX(-50%);
-  width:80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
   opacity: 1;
-  margin-top: 130px;
   z-index: 1;
 }
 
 #fortune-text {
   color: #333;
-  padding: 12px 20px;
+  padding: 20px 40px;
   border-radius: 4px;
   display: inline-block;
  background: #fffbe8;
