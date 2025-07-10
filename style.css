@@ -1,23 +1,18 @@
 @font-face {
-    font-family: 'Yeshi';
-    src: url("assets/fonts/EtnaXCondensed-Regular.otf");
+  font-family: "Yeshi";
+  src: url("assets/fonts/EtnaXCondensed-Regular.otf");
 }
 
-html 
-
-
-body {
+html body {
   margin: 0;
   padding: 0;
-  background-color: #ED2224;
-  font-family: 'Yeshi';
+  background-color: #ed2224;
+  font-family: "Yeshi";
   text-align: center;
   color: white;
   overflow: hidden;
   height: 100vh;
-  
 }
-
 
 .neon {
   font-size: 6rem;
@@ -26,37 +21,42 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFF9DC;
-  text-shadow:
-    0 0 5px #FDBB36,
-    0 0 10px #FDBB36,
-    0 0 15px #FDBB36,
-    0 0 20px #FDBB36;
+  color: #fff9dc;
+  text-shadow: 0 0 5px #fdbb36, 0 0 10px #fdbb36, 0 0 15px #fdbb36,
+    0 0 20px #fdbb36;
   animation: flicker 2s infinite;
   transition: all 1.5s ease;
 }
 
 @keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
     opacity: 1;
   }
-  20%, 24%, 55% {
+  20%,
+  24%,
+  55% {
     opacity: 0.4;
   }
 }
 
-
 #title.moved {
- position: absolute;
-  top: 5vh;
+  position: absolute;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
-font-size: 4rem;
-line-height: 3rem;
+  font-size: 4rem;
+  line-height: 3rem;
 }
 
 #dumpling-container {
-position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -65,15 +65,12 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .dumpling-half {
-
-height: auto;
-transition: all 1.5s ease;
-z-index: 10;
-/* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  height: auto;
+  transition: all 1.5s ease;
+  z-index: 10;
 }
 
 #dumpling-left {
@@ -95,7 +92,7 @@ z-index: 10;
 }
 
 #paper-strip {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -105,18 +102,22 @@ z-index: 10;
 }
 
 #fortune-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #333;
+  min-width: 70vw;
   padding: 20px 40px;
   border-radius: 4px;
   display: inline-block;
- background: #fffbe8;
+  background: #fffbe8;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   font-size: 2rem;
-  font-family: 'Yeshi';
+  font-family: "Yeshi";
   opacity: 0;
-transition: opacity 0.5s ease;
-
+  transition: opacity 0.5s ease;
 }
 
 .fade-in {
@@ -128,7 +129,7 @@ transition: opacity 0.5s ease;
 }
 
 #crack-button {
- position: fixed;
+  position: fixed;
   top: 100%;
   left: 50%;
   width: 100%;
@@ -140,12 +141,12 @@ transition: opacity 0.5s ease;
   color: #fffbe8;
   background: transparent;
   border: 6px solid #fffbe8;
-    /* outline: 3px solid #fffbe8;      
+  /* outline: 3px solid #fffbe8;      
   outline-offset: 6px;                */
   border-radius: 100px;
   box-shadow: none;
   transition: color 0.3s;
-  font-family: 'Yeshi';
+  font-family: "Yeshi";
 }
 
 #crack-button:hover {
