@@ -17,6 +17,7 @@ html body {
 .neon {
   font-size: 6rem;
   line-height: 5rem;
+  width: 100vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,7 +61,7 @@ html body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80vw; /* or max-width: 400px; for smaller screens */
+  width: 90vw; /* or max-width: 400px; for smaller screens */
   height: auto;
   display: flex;
   justify-content: center;
@@ -112,7 +113,7 @@ html body {
   border-radius: 4px;
   display: inline-block;
   background: #fffbe8;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   font-size: 2rem;
   font-family: "Yeshi";
