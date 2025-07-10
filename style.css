@@ -49,9 +49,9 @@ html body {
 
 #title.moved {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   font-size: 4rem;
   line-height: 3rem;
 }
